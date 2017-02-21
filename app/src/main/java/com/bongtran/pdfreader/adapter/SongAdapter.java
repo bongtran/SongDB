@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.bongtran.pdfreader.R;
@@ -40,6 +41,11 @@ public class SongAdapter extends ArrayAdapter {
         setContext(context);
     }
 
+    public void addAll(ArrayList<SongModel> objects){
+        data.clear();
+        data.addAll(objects);
+        notifyDataSetChanged();
+    }
 
     public void addItem(SongModel object){
         data.add(object);

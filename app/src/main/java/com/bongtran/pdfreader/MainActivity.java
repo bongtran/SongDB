@@ -1,17 +1,24 @@
 package com.bongtran.pdfreader;
 
+import com.bongtran.pdfreader.adapter.SongAdapter;
+import com.bongtran.pdfreader.database.DataManager;
+import com.bongtran.pdfreader.model.SongModel;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     // Remove the below line after defining your own ad unit ID.
@@ -22,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
     private int mLevel;
     private Button mNextLevelButton;
     private InterstitialAd mInterstitialAd;
-    private TextView mLevelTextView;
+    private EditText txtSearch;
+    private ListView listView;
+    private SongAdapter songAdapter;
+    private SongAdapter.SongListener songListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,25 +40,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Create the next level button, which tries to show an interstitial when clicked.
-        mNextLevelButton = ((Button) findViewById(R.id.next_level_button));
-        mNextLevelButton.setEnabled(false);
-        mNextLevelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showInterstitial();
-            }
-        });
+//        mNextLevelButton = ((Button) findViewById(R.id.next_level_button));
+//        mNextLevelButton.setEnabled(false);
+//        mNextLevelButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showInterstitial();
+//            }
+//        });
 
         // Create the text view to show the level number.
-        mLevelTextView = (TextView) findViewById(R.id.level);
-        mLevel = START_LEVEL;
+        txtSearch = (EditText) findViewById(R.id.txt_searchText);
+        listView = (ListView) findViewById(R.id.lvResult);
+//        mLevel = START_LEVEL;
 
+        songAdapter = new SongAdapter(getApplication(), R.layout.view_item_song);
         // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
         mInterstitialAd = newInterstitialAd();
-        loadInterstitial();
+//        loadInterstitial();
+        songListener = new SongAdapter.SongListener() {
+            @Override
+            public void onClick(int position, SongModel object) {
+                loadPDFFile(object);
+            }
+        };
 
-        // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
-        Toast.makeText(this, TOAST_TEXT, Toast.LENGTH_LONG).show();
+        songAdapter.setTaskListener(songListener);
+        listView.setAdapter(songAdapter);
+        loadSongs();
     }
 
 
@@ -116,8 +135,30 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToNextLevel() {
         // Show the next level and reload the ad to prepare for the level after.
-        mLevelTextView.setText("Level " + (++mLevel));
+        txtSearch.setText("Level " + (++mLevel));
         mInterstitialAd = newInterstitialAd();
         loadInterstitial();
+    }
+
+    private void loadSongs() {
+        ArrayList<SongModel> songModels = DataManager.sharedInstance().getSongs();
+        songAdapter.addAll(songModels);
+    }
+
+    private void loadSongs(String search) {
+        ArrayList<SongModel> songModels = DataManager.sharedInstance().getSongs(search);
+        songAdapter.addAll(songModels);
+    }
+
+    private void loadPDFFile(SongModel song) {
+        if(!song.getUrl1().isEmpty()){
+            Intent intent = new Intent(getBaseContext(), MainActivity.class);
+            intent.putExtra("name", song.getName());
+            intent.putExtra("url1", song.getUrl1());
+            intent.putExtra("url2", song.getUrl2());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            startActivity(intent);
+        }
     }
 }

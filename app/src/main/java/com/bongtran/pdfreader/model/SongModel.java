@@ -29,6 +29,20 @@ public class SongModel {
         this.url2 = "";
     }
 
+    public SongModel(int id, String name, String url1) {
+        this.beginWith = "";
+        this.composer = "";
+        this.fileName = "";
+        this.id = id;
+        this.name = name;
+        this.name_non = "";
+        this.startWith = "";
+        this.type = 0;
+        this.url1 = url1;
+        this.url2 = "";
+    }
+
+
     public int getId() {
         return id;
     }
