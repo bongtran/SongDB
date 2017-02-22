@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                loadSongs(charSequence.toString());
+                if (charSequence.length() < 1)
+                    loadSongs(charSequence.toString());
             }
 
             @Override
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadPDFFile(SongModel song) {
-        if(!song.getUrl1().isEmpty()){
+        if (!song.getUrl1().isEmpty()) {
             mLevel++;
             Intent intent = new Intent(getBaseContext(), PDFWebViewActivity.class);
             intent.putExtra("name", song.getName());
