@@ -24,7 +24,8 @@ public class SongDataSource extends DatasourceBase{
 
     public ArrayList<SongModel> get100Songs() {
         ArrayList<SongModel> mContact = new ArrayList<SongModel>();
-        String selectQuery = "SELECT  * FROM " + DatabaseHelper.TABLE_SONG + " Limit 100";
+        String selectQuery = "SELECT ID, Name, Url1 FROM " + DatabaseHelper.TABLE_SONG + " ORDER BY RANDOM() Limit 100";
+//        selectQuery = "select * from Song limit 100";
         Cursor cursor = database.rawQuery(selectQuery, null);
 
         if (cursor.moveToFirst()) {
@@ -42,10 +43,10 @@ public class SongDataSource extends DatasourceBase{
 
     public ArrayList<SongModel> getSongs(String search) {
         ArrayList<SongModel> mContact = new ArrayList<SongModel>();
-        String selectQuery = "SELECT  * FROM " + DatabaseHelper.TABLE_SONG +
-                "WHERE " + DatabaseHelper.SONG_NAME_COL + "LIKE '%" + search + "%'"+
-                "OR " + DatabaseHelper.SONG_NAME_NON_COL + "LIKE '%" + search + "%'"+
-                "ORDER BY ID ASC Limit 100";
+        String selectQuery = "SELECT ID, Name, Url1 FROM " + DatabaseHelper.TABLE_SONG +
+                " WHERE " + DatabaseHelper.SONG_NAME_COL + " LIKE '" + search + "%'"+
+                " OR " + DatabaseHelper.SONG_NAME_NON_COL + " LIKE '" + search + "%'"+
+                " ORDER BY ID ASC Limit 100";
         Cursor cursor = database.rawQuery(selectQuery, null);
 
         if (cursor.moveToFirst()) {

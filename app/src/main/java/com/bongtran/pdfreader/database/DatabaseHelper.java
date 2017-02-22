@@ -28,7 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String SONG_ID_COL = "ID";
     public static final String SONG_NAME_COL = "Name";
     public static final String SONG_NAME_NON_COL = "Name_Non";
-    public static final String SONG_URL1_COL = "Url1";
+    public static final String SONG_URL1_COL = "URL1";
 
     /**
      * Constructor
@@ -44,34 +44,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } else {
             DB_PATH = "/data/data/" + context.getPackageName() + "/databases/";
         }
+        createDataBase();
     }
 
     /**
      * Creates a empty database on the system and rewrites it with your own database.
      */
-    public void createDataBase() throws IOException {
+    public void createDataBase() {
+        try {
+            boolean dbExist = checkDataBase();
 
-        boolean dbExist = checkDataBase();
+            if (dbExist) {
+                //do nothing - database already exist
+            } else {
+                //By calling this method and empty database will be created into the default system path
+                //of your application so we are gonna be able to overwrite that database with our database.
+                this.getReadableDatabase();
 
-        if (dbExist) {
-            //do nothing - database already exist
-        } else {
-
-            //By calling this method and empty database will be created into the default system path
-            //of your application so we are gonna be able to overwrite that database with our database.
-            this.getReadableDatabase();
-
-            try {
 
                 copyDataBase();
-
-            } catch (IOException e) {
-
-                throw new Error("Error copying database");
-
             }
+        } catch (IOException e) {
+            throw new Error("Error copying database");
         }
-
     }
 
     /**
@@ -80,23 +75,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      * @return true if it exists, false if it doesn't
      */
     private boolean checkDataBase() {
-
         SQLiteDatabase checkDB = null;
 
         try {
             String myPath = DB_PATH + DB_NAME;
             checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-
         } catch (SQLiteException e) {
-
             //database does't exist yet.
-
         }
-
         if (checkDB != null) {
-
             checkDB.close();
-
         }
 
         return checkDB != null ? true : false;
@@ -108,7 +96,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      * This is done by transfering bytestream.
      */
     private void copyDataBase() throws IOException {
-
         //Open your local db as the input stream
         InputStream myInput = myContext.getAssets().open(DB_NAME);
 
@@ -129,39 +116,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         myOutput.flush();
         myOutput.close();
         myInput.close();
-
     }
 
     public void openDataBase() throws SQLException {
-
         //Open the database
         String myPath = DB_PATH + DB_NAME;
         database = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-
     }
 
     @Override
     public synchronized void close() {
-
         if (database != null)
             database.close();
 
         super.close();
-
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        try {
-            createDataBase();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            createDataBase();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
-
 }

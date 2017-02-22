@@ -2,16 +2,22 @@
 //apply plugin: 'com.jakewharton.hugo'
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
         classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
     }
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.jakewharton.hugo'
+//apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 25
@@ -37,14 +43,13 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    //    classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
-
-//    classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.google.android.gms:play-services-ads:10.0.1'
-    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+//    apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
 }

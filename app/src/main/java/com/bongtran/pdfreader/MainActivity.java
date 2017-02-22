@@ -10,6 +10,8 @@ import com.google.android.gms.ads.InterstitialAd;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -21,14 +23,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    // Remove the below line after defining your own ad unit ID.
-    private static final String TOAST_TEXT = "Test ads are being shown. "
-            + "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
-
-    private static final int START_LEVEL = 1;
-    private int mLevel;
-    private Button mNextLevelButton;
-    private InterstitialAd mInterstitialAd;
+    private int mLevel = 0;
     private EditText txtSearch;
     private ListView listView;
     private SongAdapter songAdapter;
@@ -39,32 +34,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Create the next level button, which tries to show an interstitial when clicked.
-//        mNextLevelButton = ((Button) findViewById(R.id.next_level_button));
-//        mNextLevelButton.setEnabled(false);
-//        mNextLevelButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showInterstitial();
-//            }
-//        });
-
         // Create the text view to show the level number.
         txtSearch = (EditText) findViewById(R.id.txt_searchText);
+
         listView = (ListView) findViewById(R.id.lvResult);
-//        mLevel = START_LEVEL;
 
         songAdapter = new SongAdapter(getApplication(), R.layout.view_item_song);
-        // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
-        mInterstitialAd = newInterstitialAd();
-//        loadInterstitial();
         songListener = new SongAdapter.SongListener() {
             @Override
             public void onClick(int position, SongModel object) {
                 loadPDFFile(object);
             }
         };
+        txtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                loadSongs(charSequence.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
         songAdapter.setTaskListener(songListener);
         listView.setAdapter(songAdapter);
         loadSongs();
@@ -92,54 +89,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private InterstitialAd newInterstitialAd() {
-        InterstitialAd interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
-        interstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                mNextLevelButton.setEnabled(true);
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                mNextLevelButton.setEnabled(true);
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Proceed to the next level.
-                goToNextLevel();
-            }
-        });
-        return interstitialAd;
-    }
-
-    private void showInterstitial() {
-        // Show the ad if it's ready. Otherwise toast and reload the ad.
-        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
-            goToNextLevel();
-        }
-    }
-
-    private void loadInterstitial() {
-        // Disable the next level button and load the ad.
-        mNextLevelButton.setEnabled(false);
-        AdRequest adRequest = new AdRequest.Builder()
-                .setRequestAgent("android_studio:ad_template").build();
-        mInterstitialAd.loadAd(adRequest);
-    }
-
-    private void goToNextLevel() {
-        // Show the next level and reload the ad to prepare for the level after.
-        txtSearch.setText("Level " + (++mLevel));
-        mInterstitialAd = newInterstitialAd();
-        loadInterstitial();
-    }
-
     private void loadSongs() {
         ArrayList<SongModel> songModels = DataManager.sharedInstance().getSongs();
         songAdapter.addAll(songModels);
@@ -152,10 +101,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadPDFFile(SongModel song) {
         if(!song.getUrl1().isEmpty()){
-            Intent intent = new Intent(getBaseContext(), MainActivity.class);
+            mLevel++;
+            Intent intent = new Intent(getBaseContext(), PDFWebViewActivity.class);
             intent.putExtra("name", song.getName());
             intent.putExtra("url1", song.getUrl1());
             intent.putExtra("url2", song.getUrl2());
+            intent.putExtra("count", mLevel);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
             startActivity(intent);
