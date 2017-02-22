@@ -1,9 +1,9 @@
-package com.bongtran.pdfreader.database;
+package com.bongtran.ntc.database;
 
 import android.content.Context;
 import android.database.Cursor;
 
-import com.bongtran.pdfreader.model.SongModel;
+import com.bongtran.ntc.model.SongModel;
 
 import java.util.ArrayList;
 

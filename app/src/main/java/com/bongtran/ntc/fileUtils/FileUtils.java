@@ -1,11 +1,8 @@
-package com.bongtran.pdfreader.fileUtils;
+package com.bongtran.ntc.fileUtils;
 
-import android.app.Application;
 import android.os.Environment;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by ASUS on 2/15/2017.

@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader.database;
+package com.bongtran.ntc.database;
 
 import android.content.Context;
 import android.database.SQLException;

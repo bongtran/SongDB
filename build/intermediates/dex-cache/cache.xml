@@ -30,15 +30,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ASUS\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.5.1\bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc\butterknife-annotations-8.5.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.5.1_991ecd07fafbc20799ec452fac9b523dab0d7346\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -138,21 +129,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9ffa42397be585066ffe0e998d607f50fdc8b8f7">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_626cedb0c619858c743b83d5e7dc2e07fb820e05\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.joanzapata.pdfview-android-pdfview-1.0.4_6b5b636e24512fe1612b6e41aaa37dd00b2d33d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c08b4a6d6006b8dbad2fe260cd4b3a08bba389c1">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_626cedb0c619858c743b83d5e7dc2e07fb820e05\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -180,15 +171,6 @@
         revision="25.0.0"
         sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_f9f40daa61ee8df98baff44e90514b7718af6651\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.5.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.5.1_5a7cd2c2457e1cab797c12d046d99a0b35a78482\classes.dex" />
     </item>
     <item
         is-multidex="true"

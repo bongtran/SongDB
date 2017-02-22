@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader.app;
+package com.bongtran.ntc.app;
 
 import android.app.Application;
 import android.content.Context;

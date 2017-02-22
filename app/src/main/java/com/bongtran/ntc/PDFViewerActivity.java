@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader;
+package com.bongtran.ntc;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,11 +9,9 @@ import android.view.View;
 
 import com.joanzapata.pdfview.PDFView;
 
-import butterknife.BindView;
 
 public class PDFViewerActivity extends AppCompatActivity {
 
-    @BindView(R.id.pdfview)
     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

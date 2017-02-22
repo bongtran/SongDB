@@ -1,11 +1,8 @@
-package com.bongtran.pdfreader;
+package com.bongtran.ntc;
 
-import com.bongtran.pdfreader.adapter.SongAdapter;
-import com.bongtran.pdfreader.database.DataManager;
-import com.bongtran.pdfreader.model.SongModel;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+import com.bongtran.ntc.adapter.SongAdapter;
+import com.bongtran.ntc.database.DataManager;
+import com.bongtran.ntc.model.SongModel;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +11,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader;
+package com.bongtran.ntc;
 
 import org.junit.Test;
 

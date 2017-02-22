@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader.adapter;
+package com.bongtran.ntc.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,11 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bongtran.pdfreader.R;
-import com.bongtran.pdfreader.model.SongModel;
+import com.bongtran.ntc.R;
+import com.bongtran.ntc.model.SongModel;
 
 import java.util.ArrayList;
 

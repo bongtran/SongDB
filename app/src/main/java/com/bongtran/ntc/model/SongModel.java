@@ -1,4 +1,4 @@
-package com.bongtran.pdfreader.model;
+package com.bongtran.ntc.model;
 
 /**
  * Created by ASUS on 2/21/2017.
