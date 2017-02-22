@@ -1,6 +1,8 @@
-package com.bongtran.ntc;
+package com.bongtran.ntc.activity;
 
+import com.bongtran.ntc.R;
 import com.bongtran.ntc.adapter.SongAdapter;
+import com.bongtran.ntc.app.SongApp;
 import com.bongtran.ntc.database.DataManager;
 import com.bongtran.ntc.model.SongModel;
 
@@ -13,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -48,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (charSequence.length() < 1)
+                if (charSequence.length() > 0)
                     loadSongs(charSequence.toString());
+                else
+                    loadSongs();
             }
 
             @Override
@@ -105,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
             startActivity(intent);
+        }
+        else {
+            Toast.makeText(SongApp.getAppContext(), "Không thể mở bài nhạc này", Toast.LENGTH_LONG);
         }
     }
 }

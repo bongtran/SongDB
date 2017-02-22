@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.bongtran.ntc.PDFViewerActivity"
+    tools:context="com.bongtran.ntc.activity.PDFViewerActivity"
     tools:showIn="@layout/activity_pdfviewer">
 
 

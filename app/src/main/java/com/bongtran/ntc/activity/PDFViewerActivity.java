@@ -1,4 +1,4 @@
-package com.bongtran.ntc;
+package com.bongtran.ntc.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.bongtran.ntc.R;
 import com.joanzapata.pdfview.PDFView;
 
 

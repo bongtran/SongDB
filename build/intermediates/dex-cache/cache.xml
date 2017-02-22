@@ -3,12 +3,48 @@
 
     <item
         is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_dea5194e312179c9c32ad31314dd625db12b492b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="1d193729baf37df3d902a423291423a0df7e3779">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_03df2a80580a635bbf8922efecaa9031c89cbf60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_f1843c4abaaa7b651f26300dde806fec93b8ed88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c3847924bfc8f257f99945aa3459c560f5602258">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_626cedb0c619858c743b83d5e7dc2e07fb820e05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.joanzapata.pdfview-android-pdfview-1.0.4_6b5b636e24512fe1612b6e41aaa37dd00b2d33d0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,12 +57,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_525da3e759e2b65f5769c290b263984325614d5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_d3528069d14e74a517a9849f465d71336c0f333f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_3caa1f0fd05bf4ce009ab53416d466b2b94e2b60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_f9f40daa61ee8df98baff44e90514b7718af6651\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,12 +102,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_52d5d9724435697f1d64dcfb6d9a114b94c19194\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1575a400e1ebd7fed1f53f71b7dc38637466ae45">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8542bef4636b22860907c710ca44395b9d945f68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="25438f55fc6d906a0e72f30b21487541430ede43">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_181576ae667b3a467738bf7d4042200fc51750ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_01c0e39056c5312da6e8f2db006be39247442bdf\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -108,96 +198,6 @@
         revision="25.0.0"
         sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
         <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_1a180399dfac621c60d1a5591e585e2e86b9d9da\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_dea5194e312179c9c32ad31314dd625db12b492b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_f1843c4abaaa7b651f26300dde806fec93b8ed88\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.joanzapata.pdfview-android-pdfview-1.0.4_6b5b636e24512fe1612b6e41aaa37dd00b2d33d0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c08b4a6d6006b8dbad2fe260cd4b3a08bba389c1">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_626cedb0c619858c743b83d5e7dc2e07fb820e05\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_525da3e759e2b65f5769c290b263984325614d5c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_3caa1f0fd05bf4ce009ab53416d466b2b94e2b60\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_f9f40daa61ee8df98baff44e90514b7718af6651\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_52d5d9724435697f1d64dcfb6d9a114b94c19194\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1575a400e1ebd7fed1f53f71b7dc38637466ae45">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8542bef4636b22860907c710ca44395b9d945f68\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UFCCodes\PDFReader\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="E:\UFCCodes\PDFReader\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_01c0e39056c5312da6e8f2db006be39247442bdf\classes.dex" />
     </item>
     <item
         is-multidex="true"
