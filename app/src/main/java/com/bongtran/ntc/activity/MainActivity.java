@@ -8,6 +8,7 @@ import com.bongtran.ntc.model.SongModel;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private int mLevel = 0;
+    private boolean isExit = false;
     private EditText txtSearch;
     private ListView listView;
     private SongAdapter songAdapter;
@@ -110,9 +112,25 @@ public class MainActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
             startActivity(intent);
+        } else {
+            Toast.makeText(SongApp.getAppContext(), "Không thể mở bài nhạc này", Toast.LENGTH_LONG).show();
         }
-        else {
-            Toast.makeText(SongApp.getAppContext(), "Không thể mở bài nhạc này", Toast.LENGTH_LONG);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (isExit) {
+            super.onBackPressed();
+        } else {
+            Toast.makeText(SongApp.getAppContext(), "Nhấn nút Back một lần nữa để thoát.", Toast.LENGTH_SHORT).show();
+            isExit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    isExit = false;
+                }
+            }, 3 * 1000);
+
         }
     }
 }
