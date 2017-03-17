@@ -10,7 +10,7 @@
         This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-6776760454122339/7067804809</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_main22">Main22Activity</string>
 
@@ -19,7 +19,7 @@
         This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6776760454122339/4114338404</string>
     <string name="title_activity_pdfviewer">PDFViewerActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
