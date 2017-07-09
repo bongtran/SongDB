@@ -26,8 +26,8 @@ android {
         applicationId "com.bongtran.ntc"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 110
-        versionName "1.1"
+        versionCode 120
+        versionName "1.2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -50,6 +50,7 @@ dependencies {
 //    apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
-
-    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+    compile 'com.github.barteksc:android-pdf-viewer:2.7.0-beta.1'
+//    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+    compile "commons-io:commons-io:+"
 }

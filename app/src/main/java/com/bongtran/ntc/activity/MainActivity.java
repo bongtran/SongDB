@@ -1,11 +1,5 @@
 package com.bongtran.ntc.activity;
 
-import com.bongtran.ntc.R;
-import com.bongtran.ntc.adapter.SongAdapter;
-import com.bongtran.ntc.app.SongApp;
-import com.bongtran.ntc.database.DataManager;
-import com.bongtran.ntc.model.SongModel;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +11,12 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.bongtran.ntc.R;
+import com.bongtran.ntc.adapter.SongAdapter;
+import com.bongtran.ntc.app.SongApp;
+import com.bongtran.ntc.database.DataManager;
+import com.bongtran.ntc.model.SongModel;
 
 import java.util.ArrayList;
 
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadPDFFile(SongModel song) {
         if (!song.getUrl1().isEmpty()) {
             mLevel++;
-            Intent intent = new Intent(getBaseContext(), PDFWebViewActivity.class);
+            Intent intent = new Intent(getBaseContext(), PDFViewerActivity.class);
             intent.putExtra("name", song.getName());
             intent.putExtra("url1", song.getUrl1());
             intent.putExtra("url2", song.getUrl2());
