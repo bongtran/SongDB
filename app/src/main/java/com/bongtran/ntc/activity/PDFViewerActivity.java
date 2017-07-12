@@ -1,14 +1,16 @@
 package com.bongtran.ntc.activity;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.webkit.URLUtil;
 import android.widget.ImageButton;
 
 import com.bongtran.ntc.R;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnErrorListener;
+import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -54,8 +56,14 @@ public class PDFViewerActivity extends Activity {
         pdfView = (PDFView) findViewById(R.id.pdfView);
         urlString = getIntent().getStringExtra("url1");
         String name = getIntent().getStringExtra("name");
+        final String fileName = URLUtil.guessFileName(urlString, null, null);
         count = getIntent().getIntExtra("count", count);
 
+        final ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setMessage(getString(R.string.dialog_loading));
+        dialog.show();
 //        Uri uri =  Uri.parse(url);
         Thread thread = new Thread() {
             @Override
@@ -67,10 +75,11 @@ public class PDFViewerActivity extends Activity {
 //            FileUtils.copyURLToFile(url, f);
 
                     String tDir = System.getProperty("java.io.tmpdir");
-                    String path = tDir + "/tmp" + ".pdf";
+                    String path = tDir + fileName;
                     file = new File(path);
-                    file.deleteOnExit();
-                    FileUtils.copyURLToFile(url, file);
+//                    file.deleteOnExit();
+                    if(!file.exists())
+                        FileUtils.copyURLToFile(url, file);
 //                    Log.d(TAG, "Copied file");
                     pdfView.fromFile(file)
 //                .pages(0, 2, 1, 3, 3, 3) // all pages are displayed by default
@@ -82,13 +91,26 @@ public class PDFViewerActivity extends Activity {
 //                .onDraw(onDrawListener)
                             // allows to draw something on all pages, separately for every page. Called only for visible pages
 //                .onDrawAll(onDrawListener)
-//                .onLoad(onLoadCompleteListener) // called after document is loaded and starts to be rendered
+                .onLoad(new OnLoadCompleteListener() {
+                    @Override
+                    public void loadComplete(int nbPages) {
+                        if(pdfView.getPageCount() > 1){
+                            btnBack.setAlpha(0.5f);
+                        }
+                        dialog.dismiss();
+                    }
+                }) // called after document is loaded and starts to be rendered
 //                .onPageChange(onPageChangeListener)
 //                .onPageScroll(onPageScrollListener)
                             .onError(new OnErrorListener() {
                                 @Override
                                 public void onError(Throwable t) {
-                                    Log.d(TAG, t.getMessage());
+//                                    Log.d(TAG, t.getMessage());
+                                    dialog.dismiss();
+                                    String tDir = System.getProperty("java.io.tmpdir");
+                                    String path = tDir + fileName;
+                                    File fileToDelete = new File(path);
+                                    fileToDelete.deleteOnExit();
                                 }
                             })
 //                .onRender(onRenderListener) // called after document is rendered for the first time
@@ -97,20 +119,17 @@ public class PDFViewerActivity extends Activity {
                             .scrollHandle(null)
                             .enableAntialiasing(true) // improve rendering a little bit on low-res screens
                             // spacing between pages in dp. To define spacing color, set view background
-                            .spacing(0)
+                            .spacing(1)
                             .load();
 //                    Log.d(TAG, "Loaded file");
 
                 } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                    Log.d(TAG, e.getMessage());
+//                    e.printStackTrace();
+//                    Log.d(TAG, e.getMessage());
+                    dialog.dismiss();
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Log.d(TAG, e.getMessage());
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                    Log.d(TAG, e.getMessage());
+                    dialog.dismiss();
                 }
             }
         };

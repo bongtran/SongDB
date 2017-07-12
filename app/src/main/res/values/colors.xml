@@ -100,4 +100,5 @@
     <color name="primary">#1d1d1d</color>
     <color name="primaryDark">#FFFFFF</color>
     <color name="accent">#EEF7F9</color>
+    <color name="pdf_background">#B1B7BC</color>
 </resources>

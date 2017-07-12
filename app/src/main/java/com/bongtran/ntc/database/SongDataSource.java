@@ -2,6 +2,7 @@ package com.bongtran.ntc.database;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.util.Log;
 
 import com.bongtran.ntc.model.SongModel;
 
@@ -26,18 +27,21 @@ public class SongDataSource extends DatasourceBase{
         ArrayList<SongModel> mContact = new ArrayList<SongModel>();
         String selectQuery = "SELECT ID, Name, Url1 FROM " + DatabaseHelper.TABLE_SONG + " ORDER BY RANDOM() Limit 100";
 //        selectQuery = "select * from Song limit 100";
-        Cursor cursor = database.rawQuery(selectQuery, null);
+        try {
+            Cursor cursor = database.rawQuery(selectQuery, null);
 
-        if (cursor.moveToFirst()) {
-            do {
-                SongModel result = new SongModel(cursor.getInt(cursor.getColumnIndex(DatabaseHelper.SONG_ID_COL)),
-                        cursor.getString(cursor.getColumnIndex(DatabaseHelper.SONG_NAME_COL)),
-                        cursor.getString(cursor.getColumnIndex(DatabaseHelper.SONG_URL1_COL)));
-                mContact.add(result);
-            } while (cursor.moveToNext());
+            if (cursor.moveToFirst()) {
+                do {
+                    SongModel result = new SongModel(cursor.getInt(cursor.getColumnIndex(DatabaseHelper.SONG_ID_COL)),
+                            cursor.getString(cursor.getColumnIndex(DatabaseHelper.SONG_NAME_COL)),
+                            cursor.getString(cursor.getColumnIndex(DatabaseHelper.SONG_URL1_COL)));
+                    mContact.add(result);
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+        }catch (Exception e){
+            Log.d("Database", e.getMessage());
         }
-        cursor.close();
-
         return mContact;
     }
 

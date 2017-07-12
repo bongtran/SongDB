@@ -63,6 +63,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
                 copyDataBase();
+                DataManager.sharedInstance().getSongs("1000");
             }
         } catch (IOException e) {
             throw new Error("Error copying database");

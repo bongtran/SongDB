@@ -2,24 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/595d6e4030dbe2283dc7f00db1b7c135a27dd8d1/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_0d4cc04d5415ced8a590234d221d769b89c92634.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/b932cd57d137252938bf5083768c2624d571da84/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_0921dfff772468643206c37a5852f2ee532f6e29.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/Peter/.android/build-cache/b932cd57d137252938bf5083768c2624d571da84/output/jars/classes.jar"
         jumboMode="true"
@@ -47,15 +29,6 @@
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_ffc63de86c28f7139c4555710bfae76235a4feda.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/52061f89c2d359f801c1f3cef0d11e0108532f8e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_94ff2277f93960144e4abaf0d70f0666ee3c786f.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/Peter/Documents/adt-bundle-mac/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
         jumboMode="true"
@@ -65,15 +38,6 @@
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_ce0440dfe5859bfe7e61f84b8690d34d5192ec7f/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/97a8b399e627e2ef98545f9e17f8af812bb5af9c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="100c2548728b6c99e002328d3590b750a6afa9e5">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_fec82fb3f5e29889e2a8886e49a22c0c60f4d58f.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/Peter/.android/build-cache/52061f89c2d359f801c1f3cef0d11e0108532f8e/output/jars/classes.jar"
         jumboMode="true"
@@ -81,15 +45,6 @@
         revision="25.0.0"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94ff2277f93960144e4abaf0d70f0666ee3c786f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/7fb8d9408ad3f8cc2dc97e7064cc14eb5596aa8c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f0b837c18b06ddcbc97229762af728a782d7241/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -110,42 +65,6 @@
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d4cc04d5415ced8a590234d221d769b89c92634/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/fde8a8964a434ff701c9a28dc336d04d54ab80e1/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ded210cffe2e0710aab7ab3209d0577adde760e6/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/e126c560e8169a423336f4adf6ff1c7f6310b785/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_72498a2b0991111fd354ff7192eb886b113891da.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/e74f99788a4c8da101e2cf12fa64687b493d0fd8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba22167e18f120f80443eb9b607212c86f1482a4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_83bc6008395c23f669691215ee0644a4360be80b/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="/Users/Peter/.android/build-cache/fde8a8964a434ff701c9a28dc336d04d54ab80e1/output/jars/classes.jar"
         jumboMode="false"
@@ -162,42 +81,6 @@
         revision="25.0.0"
         sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_ba22167e18f120f80443eb9b607212c86f1482a4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/commons-io-2.5_ddcefbf44b180aeae4d8632d3899924b9956e1e9.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/171b6d8469241d1a366ac18debf998e818d323a2/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac4b17d5eccba9557720e5a24f14b1f834507562/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/25b64af2ae299e224277f035e2be5c43ba4fb043/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e13cf9417513b07876a48c29a3e6e4618bad4bff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/06cca5cce221e1be1fa167e0abe457b6df37247c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_665e0776f2badb765391d02ce611caec9b36c169/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,15 +120,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/144bedf8438347205bff0ffcd8ba6502bc528758/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_1abc9afad414dc41b1b1c2bd3c5087f3e5765128.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/Peter/.android/build-cache/06cca5cce221e1be1fa167e0abe457b6df37247c/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -270,51 +144,6 @@
         revision="25.0.0"
         sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d735805a3c720f39628cf8c60590449f9ce775ab/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/22cad9e68a859c20b00e995684f5fcf0f0a5d54b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_634aadcfeefeb1a787e95f860e297b51b6e6bbd5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/b30a6995b4808a8910e3f0c256bbe6d03e11388e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_d735805a3c720f39628cf8c60590449f9ce775ab.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="19859b59c340d36635b643de8be5f5c1d6c7631c">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2b097048ea9df08cbcdfd1909f16a90408c773eb/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/98a407707e37f6292aaf47a98ea11dab312cec6e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_f24670ac81246cd03e382ac794b894f66b24dfd7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/185f0fbacf7cc96e4f273c0b60abcb713383ff06/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_27f78a4a5037c69911db35919d1ca6b6d81b35f7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -354,39 +183,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Peter/.android/build-cache/76947ee7f29fc46918b62b839b764114431065ef/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c226183ef6e3c55797ce7b5b86bdfa3d7441cd47/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/.android/build-cache/1e4a60d89ec1966d0c51361fa289ebb215d4cc9d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_cbdc1cbcead24c7f106ca3d0d08a7e878901f807.jar" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Peter/.android/build-cache/644e3d265674224b7516eb16d8653a88045ebdd2/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a68d897b0dc32323b31ca1eb2cd620a2662940ea">
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4b1c470255d9169f7a09c1d139d4596ffca0589f/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Peter/Documents/adt-bundle-mac/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/support-annotations-25.3.1_ce0440dfe5859bfe7e61f84b8690d34d5192ec7f.jar" />
     </item>
     <item
         is-multidex="true"
@@ -405,6 +207,204 @@
         revision="25.0.0"
         sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
         <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cbdc1cbcead24c7f106ca3d0d08a7e878901f807/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/595d6e4030dbe2283dc7f00db1b7c135a27dd8d1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_0d4cc04d5415ced8a590234d221d769b89c92634.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/b932cd57d137252938bf5083768c2624d571da84/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_0921dfff772468643206c37a5852f2ee532f6e29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/52061f89c2d359f801c1f3cef0d11e0108532f8e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_94ff2277f93960144e4abaf0d70f0666ee3c786f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/97a8b399e627e2ef98545f9e17f8af812bb5af9c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="100c2548728b6c99e002328d3590b750a6afa9e5">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_fec82fb3f5e29889e2a8886e49a22c0c60f4d58f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/7fb8d9408ad3f8cc2dc97e7064cc14eb5596aa8c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f0b837c18b06ddcbc97229762af728a782d7241/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/fde8a8964a434ff701c9a28dc336d04d54ab80e1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ded210cffe2e0710aab7ab3209d0577adde760e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/e126c560e8169a423336f4adf6ff1c7f6310b785/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_72498a2b0991111fd354ff7192eb886b113891da.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/e74f99788a4c8da101e2cf12fa64687b493d0fd8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba22167e18f120f80443eb9b607212c86f1482a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_83bc6008395c23f669691215ee0644a4360be80b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/commons-io-2.5_ddcefbf44b180aeae4d8632d3899924b9956e1e9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/171b6d8469241d1a366ac18debf998e818d323a2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac4b17d5eccba9557720e5a24f14b1f834507562/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/25b64af2ae299e224277f035e2be5c43ba4fb043/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e13cf9417513b07876a48c29a3e6e4618bad4bff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/06cca5cce221e1be1fa167e0abe457b6df37247c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_665e0776f2badb765391d02ce611caec9b36c169/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/144bedf8438347205bff0ffcd8ba6502bc528758/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_1abc9afad414dc41b1b1c2bd3c5087f3e5765128.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/22cad9e68a859c20b00e995684f5fcf0f0a5d54b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_634aadcfeefeb1a787e95f860e297b51b6e6bbd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/b30a6995b4808a8910e3f0c256bbe6d03e11388e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_d735805a3c720f39628cf8c60590449f9ce775ab.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b326b232f2879808d409703a39882ec90cf86bf5">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2b097048ea9df08cbcdfd1909f16a90408c773eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/98a407707e37f6292aaf47a98ea11dab312cec6e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_f24670ac81246cd03e382ac794b894f66b24dfd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/185f0fbacf7cc96e4f273c0b60abcb713383ff06/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_27f78a4a5037c69911db35919d1ca6b6d81b35f7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Peter/.android/build-cache/76947ee7f29fc46918b62b839b764114431065ef/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c226183ef6e3c55797ce7b5b86bdfa3d7441cd47/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/.android/build-cache/1e4a60d89ec1966d0c51361fa289ebb215d4cc9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/classes_cbdc1cbcead24c7f106ca3d0d08a7e878901f807.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Peter/Documents/adt-bundle-mac/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Peter/Documents/Android/SongDB/app/build/intermediates/pre-dexed/release/support-annotations-25.3.1_ce0440dfe5859bfe7e61f84b8690d34d5192ec7f.jar" />
     </item>
     <item
         is-multidex="false"

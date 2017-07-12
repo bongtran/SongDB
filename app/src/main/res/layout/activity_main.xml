@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:gravity="center_vertical"
-            android:hint="Tìm kiếm bài hát" />
+            android:hint="@string/txt_search_hint" />
 
     </LinearLayout>
 
