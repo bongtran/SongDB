@@ -17,6 +17,7 @@ import com.bongtran.ntc.adapter.SongAdapter;
 import com.bongtran.ntc.app.SongApp;
 import com.bongtran.ntc.database.DataManager;
 import com.bongtran.ntc.model.SongModel;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        MobileAds.initialize(this, "ca-app-pub-6776760454122339~2637605202");
         // Create the text view to show the level number.
         txtSearch = (EditText) findViewById(R.id.txt_searchText);
 

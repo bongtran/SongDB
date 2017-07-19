@@ -26,8 +26,8 @@ android {
         applicationId "com.bongtran.ntc"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 120
-        versionName "1.2.0"
+        versionCode 122
+        versionName "1.2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -44,7 +44,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.google.android.gms:play-services-ads:10.0.1'
+    compile 'com.google.firebase:firebase-crash:11.0.1'
+    compile 'com.google.firebase:firebase-ads:11.0.1'
 //    compile 'com.jakewharton:butterknife:8.5.1'
 //    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 //    apt 'com.jakewharton:butterknife-compiler:8.4.0'
